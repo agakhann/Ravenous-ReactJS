@@ -10,6 +10,11 @@
     height: 16.66rem;
     margin-bottom: 1rem;
   }
+
+  .Business .image-container:hover {
+    filter: brightness(50%);
+    transition: 0.3s;
+  }
   
   .Business h2 {
     margin-bottom: .5rem;
@@ -26,6 +31,13 @@
     font-size: .88rem;
     font-weight: 300;
     line-height: 1rem;
+  }
+
+  .Business-information a {
+    font-size: .88rem;
+    font-weight: 300;
+    line-height: 1rem;
+    text-decoration: none;
   }
   
   .Business-address {

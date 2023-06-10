@@ -5,18 +5,22 @@ import './Business.css';
 class Business extends React.Component {
   render() {
     const {business} = this.props;
+    const maps = 'http://maps.google.com/?q=' + business.address +' '+ business.city;
     return (
       <div className="Business">
         <div className="image-container">
+         <a href={business.url} target="_blank" rel="noopener noreferrer"> 
           <img
-            src="https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg"
-            alt=""
+            src={business.imageSrc}
+            href = {business.url}
+            alt = ''
           />
+         </a> 
         </div>
         <h2>{business.name}</h2>
         <div className="Business-information">
           <div className="Business-address">
-            <p>{business.address}</p>
+            <a href = {maps} >{business.address}</a>
             <p>{business.city}</p>
             <p>{business.zipCode}</p>
           </div>
