@@ -1,5 +1,5 @@
 # Ravenous 
-A web application using React that allows users to search and filter nearby restaurants
+A web application using React that allows users to search and filter restaurants in USA, with help of Yelp API
 
 ### Clone Ravenous
 
